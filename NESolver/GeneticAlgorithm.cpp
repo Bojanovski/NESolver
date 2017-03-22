@@ -26,7 +26,7 @@ void GeneticAlgorithm::SelectCrossAndMutate()
 
 void GeneticAlgorithm::K_TournamentSelection(INTEGER k)
 {
-	assert(k <= mPopulation.size());
+	assert(k <= (INTEGER)mPopulation.size());
 	vector<UINT16> out;
 	GenerateSelectionIndices(&out, mPopulation.size(), k);
 
